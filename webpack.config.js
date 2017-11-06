@@ -17,9 +17,13 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'es2016', 'es2017', 'react'],
-          plugins: ['transform-class-properties'],
+          presets: ['es2015', 'es2016', 'react'],
+          plugins: ['transform-object-rest-spread', 'transform-class-properties']
         },
+      },
+      {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader' ]
       },
     ],
   },
