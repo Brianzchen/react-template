@@ -58,6 +58,9 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+# package.json Lock file
+package-lock.json
+
 # dotenv environment variables file
 .env
 
@@ -83,7 +86,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# Compiled files
-dist
-
 # End of https://www.gitignore.io/api/node,windows
+
+# Dist directory
+
+dist

@@ -1,8 +1,12 @@
-var path = require('path');
+const path = require('path');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
-  output: { path: path.resolve(__dirname, 'dist/'), filename: 'index.js' },
+  output: {
+    path: path.resolve(__dirname, 'dist/'),
+    filename: 'index.js',
+    chunkFilename: '[chunkhash].chunk.js',
+  },
   resolve: {
     extensions: ['*', '.js', '.jsx', '.css'],
     modules: [
@@ -18,12 +22,12 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           presets: ['es2015', 'es2016', 'react'],
-          plugins: ['transform-object-rest-spread', 'transform-class-properties']
+          plugins: ['transform-object-rest-spread', 'transform-class-properties', 'syntax-dynamic-import'],
         },
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
+        use: ['style-loader', 'css-loader'],
       },
     ],
   },
