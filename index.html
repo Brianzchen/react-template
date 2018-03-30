@@ -10,7 +10,26 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
   </head>
   <body>
-    <div id="container"></div>
-    <script src="dist/index.js"></script>
+    <noscript>
+      <style>
+        #no-js {
+          position: fixed;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          font-family: 'Noto Sans', sans-serif;
+        }
+      </style>
+      <div id="no-js">
+        You must have JavaScript enabled to use this app :(
+      </div>
+    </noscript>
+    <div id="root"></div>
+    <script src="/dist/index.js"></script>
   </body>
 </html>

@@ -6,6 +6,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist/'),
     filename: 'index.js',
     chunkFilename: '[chunkhash].chunk.js',
+    publicPath: '/dist/',
   },
   resolve: {
     extensions: ['*', '.js', '.jsx', '.css'],
@@ -20,10 +21,6 @@ module.exports = {
         test: /.jsx?$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['es2015', 'es2016', 'react'],
-          plugins: ['transform-object-rest-spread', 'transform-class-properties', 'syntax-dynamic-import'],
-        },
       },
       {
         test: /\.css$/,

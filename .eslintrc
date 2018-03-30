@@ -3,23 +3,28 @@
   "parser": "babel-eslint",
   "plugins": [
     "react",
+    "jest",
   ],
   "env": {
     "browser": true,
     "es6": true,
+    "jest/globals": true
   },
   "settings": {
     "import/resolver": "webpack",
   },
   "rules": {
+    "function-paren-newline": ["error", "consistent"],
     "no-console": ["warn", { allow: ["warn", "error"] }],
     "no-unused-expressions": ["error", { "allowShortCircuit": true, "allowTernary": true }],
     "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
     "arrow-parens": ["error", "as-needed"],
     "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
     "react/forbid-prop-types": [1, { "forbid": ['any', 'array'] }],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
     "import/prefer-default-export": 0,
+    "import/no-named-as-default": 0,
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -35,8 +40,6 @@
         "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]]
       }
     ],
-  },
-  "globals": {
   },
   "ecmaFeatures": {
     "jsx": true
