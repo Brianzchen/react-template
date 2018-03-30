@@ -2,12 +2,15 @@
 
 ## About
 
-A project for all the basics you'll need to start a react project.
+This project is intended to be a quick start pack if I ever want to jump into creating something new and don't want to set it up every time. It has all the basics you need to get started.
 
-It doesn't come with the fancy stuff like webpack-dev-server or popular libraries like redux as those kinds of things aren't always necessary.
+This more or less replicates what `create-react-app` does but my preference is to build the setup myself.
+
+Redux is not included with this package, because although it's a great library, it's not necessary for all projects
 
 ## Getting started
 
 Install dependencies with `npm install` or `yarn`
 
-Build your project in dev mode with `yarn watch` or production with `yarn build`.
+Start the web-server with `npm start` or `yarn start`.
+And run `npm run build` or `yarn build` to create a build for distribution
