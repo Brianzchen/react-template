@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
     "clean": "rimraf dist",
     "uglify:css": "uglifycss public/css/styles.css > public/css/styles.min.css",
     "uglify:html": "html-minifier --minify-css --minify-js --remove-comments --collapse-whitespace index.example.html -o index.html",
