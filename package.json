@@ -14,7 +14,6 @@
   "private": true,
   "dependencies": {
     "aphrodite": "^2.2.0",
-    "es6-object-assign": "^1.1.0",
     "lodash": "^4.17.4",
     "prop-types": "^15.6.0",
     "react": "^16.4.1",
