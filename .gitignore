@@ -91,3 +91,5 @@ $RECYCLE.BIN/
 # Dist directory
 
 dist
+index.html
+public/css/styles.min.css
