@@ -12,3 +12,7 @@ input, body {
   font-family: 'Noto Sans', sans-serif;
   font-size: 20px;
 }
+
+div {
+  box-sizing: border-box;
+}
