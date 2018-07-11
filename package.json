@@ -8,7 +8,7 @@
     "test:watch": "cross-env NODE_ENV=test jest --watch",
     "clean": "rimraf dist",
     "uglify:css": "uglifycss public/css/styles.css > public/css/styles.min.css",
-    "uglify:html": "html-minifier --minify-css --minify-js --remove-comments --collapse-whitespace index.example.html -o index.html",
+    "uglify:html": "html-minifier --minify-css --minify-js --remove-comments --collapse-whitespace index.template.html -o index.html",
     "uglify": "npm run uglify:css && npm run uglify:html",
     "prep": "npm run clean && npm run uglify",
     "analyze": "npm run prep && cross-env NODE_ENV=production webpack --config webpack/webpack.analyze.js",
