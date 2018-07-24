@@ -64,7 +64,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "npm test && npm run lint",
-      "pre-push": ""
+      "post-merge": "yarn"
     }
   }
 }
