@@ -23,6 +23,7 @@
     "jsx-a11y/click-events-have-key-events": 0,
     "react/forbid-prop-types": [1, { "forbid": ['any', 'array'] }],
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/destructuring-assignment": 0,
     "import/prefer-default-export": 0,
     "import/no-named-as-default": 0,
     "import/no-extraneous-dependencies": [

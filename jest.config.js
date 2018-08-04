@@ -3,4 +3,5 @@ module.exports = {
   collectCoverage: true,
   moduleDirectories: ['node_modules', 'src'],
   setupFiles: ['./src/testUtils/configure.js'],
+  testURL: 'http://localhost/',
 };
