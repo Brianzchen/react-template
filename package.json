@@ -13,7 +13,7 @@
     "uglify": "npm run uglify:css && npm run uglify:html",
     "prep": "npm run clean && npm run uglify",
     "analyze": "npm run clean && cross-env NODE_ENV=production webpack --config webpack/webpack.analyze.js",
-    "start": "npm run prep && webpack-dev-server --config webpack/webpack.dev.js",
+    "start": "npm run prep && webpack --config webpack/webpack.dev.js && webpack-dev-server --config webpack/webpack.dev.js",
     "build": "npm run prep && cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js"
   },
   "author": "",
@@ -49,6 +49,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.11.1",
     "html-minifier": "^3.5.18",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^0.14.3",
     "jest": "^23.5.0",
     "rimraf": "^2.6.2",

@@ -1,11 +1,12 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'public/dist/'),
-    filename: 'index.js',
-    chunkFilename: '[name].chunk.js',
+    filename: '[contenthash].index.js',
+    chunkFilename: '[contenthash].[name].chunk.js',
     publicPath: '/dist/',
   },
   resolve: {
@@ -18,6 +19,12 @@ module.exports = {
       path.resolve('./node_modules'),
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: path.resolve(__dirname, 'public/index.html'),
+      template: path.resolve(__dirname, 'public/index.html'),
+    }),
+  ],
   module: {
     rules: [
       {
