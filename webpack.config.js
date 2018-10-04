@@ -22,7 +22,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, 'public/index.html'),
-      template: path.resolve(__dirname, 'public/index.html'),
+      template: path.resolve(__dirname, 'public/index.min.html'),
     }),
   ],
   module: {
