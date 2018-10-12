@@ -1,7 +1,7 @@
 import React from 'react';
 import { css } from 'aphrodite';
 
-import { maxHeight } from 'css';
+import { maxHeight } from 'styles';
 
 const App = () => (
   <div className={css(maxHeight)}>
