@@ -15,7 +15,8 @@
     "prep": "npm run clean && npm run uglify && npm run copy",
     "analyze": "npm run clean && cross-env NODE_ENV=production webpack --config webpack/webpack.analyze.js",
     "start": "npm run prep && webpack --config webpack/webpack.dev.js && webpack-dev-server --config webpack/webpack.dev.js",
-    "build": "npm run prep && cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js"
+    "rev": "asset-rev dist 'css/* scripts/fontLoader.js'",
+    "build": "npm run prep && cross-env NODE_ENV=production webpack --config webpack/webpack.prod.js && npm run rev"
   },
   "author": "",
   "private": true,
@@ -33,6 +34,7 @@
     "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "asset-rev": "^0.1.7",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.0",
     "babel-jest": "^23.4.0",
