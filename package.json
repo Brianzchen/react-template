@@ -42,7 +42,7 @@
     "asset-rev": "^0.2.0",
     "babel-eslint": "^10.0.0",
     "babel-jest": "^24.0.0",
-    "babel-loader": "8.0.5",
+    "babel-loader": "8.0.6",
     "babel-plugin-transform-imports": "^1.5.1",
     "copyfiles": "^2.1.0",
     "cross-env": "^5.1.3",
