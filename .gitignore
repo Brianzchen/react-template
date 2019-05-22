@@ -151,3 +151,4 @@ $RECYCLE.BIN/
 dist
 public/index.html
 public/css/styles.min.css
+package-lock.json
