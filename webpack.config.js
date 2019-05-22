@@ -13,7 +13,7 @@ module.exports = {
     alias: {
       aphrodite: 'aphrodite/no-important',
     },
-    extensions: ['*', '.js', '.jsx', '.css'],
+    extensions: ['*', '.js', '.jsx'],
     modules: [
       path.resolve('./src'),
       path.resolve('./node_modules'),
