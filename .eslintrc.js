@@ -20,6 +20,7 @@ module.exports = {
   'rules': {
     'function-paren-newline': ['error', 'consistent'],
     'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
+    'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1, maxBOF: 0 }],
     'no-unused-expressions': ['error', { allowShortCircuit: true, allowTernary: true }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'jsx-a11y/no-static-element-interactions': 0,
