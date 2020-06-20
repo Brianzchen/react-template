@@ -7,17 +7,20 @@ module.exports = {
     'flowtype',
   ],
   env: {
-    'browser': true,
-    'es6': true,
+    browser: true,
+    es6: true,
     'jest/globals': true,
   },
   settings: {
-    'import/resolver': 'webpack',
+    'import/resolver': {
+      node: {},
+      webpack: {},
+    },
     flowtype: {
       onlyFilesWithFlowAnnotation: true,
     },
   },
-  'rules': {
+  rules: {
     'function-paren-newline': ['error', 'consistent'],
     'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
     'no-multiple-empty-lines': ['error', { max: 1, maxEOF: 1, maxBOF: 0 }],

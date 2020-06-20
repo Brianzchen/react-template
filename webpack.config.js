@@ -10,9 +10,6 @@ module.exports = {
     publicPath: '/scripts/',
   },
   resolve: {
-    alias: {
-      aphrodite: 'aphrodite/no-important',
-    },
     extensions: ['*', '.js', '.jsx'],
     modules: [
       path.resolve('./src'),

@@ -1,12 +1,14 @@
 import React from 'react';
-import { css } from 'aphrodite';
+import styled from 'styled-components';
 
-import { maxHeight } from 'styles';
+const Container = styled.div`
+  height: 100%;
+`;
 
 const App = () => (
-  <div className={css(maxHeight)}>
+  <Container data-testid="container">
     React-Template
-  </div>
+  </Container>
 );
 
 export default App;

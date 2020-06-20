@@ -1,12 +1,12 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { render } from '@testing-library/react';
 
 import App from '.';
 
 describe('<App />', () => {
   it('renders correctly', () => {
-    const wrapper = shallow(<App />);
+    const { getByTestId } = render(<App />);
 
-    expect(wrapper).toBeDefined();
+    expect(getByTestId('container')).toBeDefined();
   });
 });
